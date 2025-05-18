@@ -20,7 +20,7 @@ const Hero = () => {
             I design and code clean and modern websites and explore AI/ML to build intelligent, data-driven solutions. I'm focused on improving my development skills and exploring new skills.
           </div>
         </div>
-        <div className="mb-6 md:mb-0 ml-[-50px]">
+        <div className="mb-6 md:mb-0 ml-[20px]">
           <img
             className="rounded-full h-32 w-32 md:h-40 md:w-40 lg:h-44 lg:w-44 object-cover border-2 border-blue-500 hover:border-blue-400 transition-colors duration-300"
             src="/profile.jpeg"
