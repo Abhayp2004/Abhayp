@@ -16,8 +16,8 @@ const Hero = () => {
       </div>
       <div className="flex flex-col-reverse md:flex-row justify-center md:gap-10 sm:py-4 items-center mt-8 md:mt-0">
         <div className="text-center md:text-left md:px-4 md:w-1/2">
-          <div className="text-sm px-2 sm:px-0 font-normal text-white dark:text-white">
-            &nbsp;&nbspI design and code clean and modern websites and explore AI/ML to build intelligent, data-driven solutions. I'm focused on improving my development skills and exploring new skills.
+          <div className="text-sm px-2 sm:px-0 font-normal text-white dark:text-white pl-[10px]">
+            I design and code clean and modern websites and explore AI/ML to build intelligent, data-driven solutions. I'm focused on improving my development skills and exploring new skills.
           </div>
         </div>
         <div className="mb-6 md:mb-0">
