@@ -190,7 +190,7 @@ export default function Projects() {
     },
     {
       title: "Cryptonova",
-      imageUrl: "/cryptonova.png",
+      imageUrl: "/image.png",
       github: "https://github.com/Abhayp2004/src/images/Cryptonova",
       techStack: ["HTML", "CSS", "JavaScript", "React","Nodejs", "MongoDB"],
     },
