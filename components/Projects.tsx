@@ -188,6 +188,12 @@ export default function Projects() {
       github: "https://github.com/Abhayp2004/Travel-Journal",
       techStack: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     },
+    {
+      title: "Cryptonova",
+      imageUrl: "/cryptonova.png",
+      github: "https://github.com/Abhayp2004/src/images/Cryptonova",
+      techStack: ["HTML", "CSS", "JavaScript", "React","Nodejs", "MongoDB"],
+    },
   ]
 
   const getTechIcon = (tech: string) => {
