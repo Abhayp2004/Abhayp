@@ -191,7 +191,7 @@ export default function Projects() {
     {
       title: "Cryptonova",
       imageUrl: "/image.png",
-      github: "https://github.com/Abhayp2004/src/images/Cryptonova",
+      github: "https://abhayp.tech",
       techStack: ["HTML", "CSS", "JavaScript", "React","Nodejs", "MongoDB"],
     },
   ]
