@@ -72,9 +72,9 @@ export default function RootLayout({
               url: "https://abhayp.tech",
               jobTitle: "Full-Stack Developer",
               sameAs: [
-                "https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME",
-                "https://twitter.com/YOUR_TWITTER_HANDLE",
-                "https://github.com/YOUR_GITHUB_USERNAME",
+                "https://www.linkedin.com/in/abhay-parekh-80aa5a298",
+                "https://x.com/abhxy03",
+                "https://github.com/Abhayp2004",
               ],
             }),
           }}
