@@ -8,6 +8,7 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
@@ -15,8 +16,40 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Abhay",
-  description: "Portfolio Website of Abhay Parekh",
+  title: {
+    default: "Abhay Parekh | Full-Stack Developer",
+    template: "%s | Abhay Parekh",
+  },
+  description:
+    "Portfolio website of Abhay Parekh — full-stack developer crafting modern web experiences.",
+  metadataBase: new URL("https://abhayp.tech"),
+  openGraph: {
+    title: "Abhay Parekh | Full-Stack Developer",
+    description:
+      "Portfolio website of Abhay Parekh — full-stack developer crafting modern web experiences.",
+    url: "https://abhayp.tech",
+    siteName: "Abhay Parekh Portfolio",
+    images: [
+      {
+        url: "/og-image.jpg", // add this to /public
+        width: 1200,
+        height: 630,
+        alt: "Abhay Parekh Portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Abhay Parekh | Full-Stack Developer",
+    description:
+      "Portfolio website of Abhay Parekh — full-stack developer crafting modern web experiences.",
+    images: ["/og-image.jpg"],
+  },
+  icons: {
+    icon: "/logo.png", // your favicon or logo
+  },
 };
 
 export default function RootLayout({
@@ -27,14 +60,30 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="logo.png" />
+        <link rel="icon" href="/logo.png" />
+        {/* Structured data for Google (JSON-LD) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Abhay Parekh",
+              url: "https://abhayp.tech",
+              jobTitle: "Full-Stack Developer",
+              sameAs: [
+                "https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME",
+                "https://twitter.com/YOUR_TWITTER_HANDLE",
+                "https://github.com/YOUR_GITHUB_USERNAME",
+              ],
+            }),
+          }}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <LenisProvider>
-          {children}
-        </LenisProvider>
+        <LenisProvider>{children}</LenisProvider>
       </body>
     </html>
   );
