@@ -328,7 +328,7 @@ export default function Projects() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              A showcase of my web development journey, featuring full-stack applications and innovative solutions.
+              A showcase of <strong className="text-blue-400">Abhay Parekh</strong>&apos;s web development journey, featuring full-stack applications and innovative solutions.
             </motion.p>
         </motion.div>
         </SpotlightEffect>
@@ -362,8 +362,10 @@ export default function Projects() {
                 <div className="relative aspect-video overflow-hidden">
                     <motion.img
                       src={project.imageUrl}
-                    alt={project.title}
+                    alt={`${project.title} project screenshot`}
                       className="object-cover w-full h-full"
+                      width={800}
+                      height={450}
                       whileHover={{ 
                         scale: 1.05,
                         rotateY: 5,

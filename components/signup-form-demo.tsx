@@ -18,8 +18,8 @@ export default function SignupFormDemo() {
       className="w-full md:mb-24 mx-auto h-full  flex flex-col md:flex-row items-center justify-center p-6 md:p-8 bg-black rounded-none md:rounded-2xl shadow-lg"
     >
       {/* Contact Info Section */}
-      <section className="flex flex-col items-center md:w-1/2 text-center space-y-6 md:space-y-8">
-        <div className="text-3xl md:text-5xl text-white lg:text-6xl font-bold  relative inline-block">
+      <section className="flex flex-col items-center md:w-1/2 text-center space-y-6 md:space-y-8" aria-label="Contact information">
+        <h2 className="text-3xl md:text-5xl text-white lg:text-6xl font-bold  relative inline-block">
             Contact <span className="text-blue-500">Me</span>
             <motion.div 
               className="absolute -bottom-2 left-0 right-0 h-1 bg-blue-500 rounded-full"
@@ -28,9 +28,9 @@ export default function SignupFormDemo() {
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.5 }}
             />
-          </div>
+          </h2>
         <p className="text-sm md:text-base max-w-md text-neutral-300 px-8">
-          Have a project in mind? I&apos;d love to hear from you! Reach out to me, and let&apos;s turn your ideas into reality.
+          Have a project in mind? I&apos;d love to hear from you! Reach out to <strong className="text-blue-400">Abhay Parekh</strong>, and let&apos;s turn your ideas into reality.
         </p>
 
         <div className="flex flex-col space-y-4 w-full max-w-xs">
