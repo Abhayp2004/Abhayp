@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div 
       id="contact"
-className='py-10 sm:py-0'>
+      className="pt-14 md:pt-20 pb-10">
         <SignupFormDemo/>
     </div>
   )
